@@ -12,8 +12,13 @@ main: main.c
 	$(CC) $(CFLAGS) -o main main.c
 
 test: 
+	@echo "[1] MAKE:"
 	make main
-	./main
+	@echo
+	@echo "[2] COMMAND:"
+	@./main
+	@echo
+	@echo "[3] CLEANUP:"
 	make clean
 
 clean: 
